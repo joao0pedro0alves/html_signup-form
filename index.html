@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>HTML Sign Up Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="form-container">
+        <form method="post" id="signup-form">
+          <h1>Sign Up</h1>
+          <h3>Please fill in this form to create an account.</h3>
+
+          <div class="form-control label">
+            <input
+              autofocus
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              type="text"
+              required
+            />
+            <label for="name" class="label">Name</label>
+          </div>
+
+          <div class="form-control">
+            <input
+              autofocus
+              autocomplete="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              type="email"
+              required
+            />
+            <label for="email">E-mail</label>
+          </div>
+
+          <div class="form-control">
+            <input
+              autocomplete="current-password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              type="password"
+              min="8"
+              required
+            />
+            <label for="password">Password</label>
+          </div>
+
+          <div class="form-control">
+            <input
+              name="password"
+              id="confirm-password"
+              placeholder="Confirm password"
+              type="password"
+              min="8"
+              required
+            />
+            <label for="password">Confirm Password</label>
+          </div>
+
+          <div class="form-control">
+            <input type="submit" value="Sign Up" />
+          </div>
+        </form>
+
+        <div class="other-logins">
+          <button class="login-button facebook">
+            <i class="fab fa-facebook-f"></i>
+            <span>Sign up with Facebook</span>
+          </button>
+
+          <button class="login-button google">
+            <i class="fab fa-google"></i>
+            <span>Sign up with Google</span>
+          </button>
+
+          <button class="login-button twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Sign up with Twitter</span>
+          </button>
+        </div>
+      </section>
+      <section class="vector-banner">
+        <div class="copyright">
+          <a href="http://www.freepik.com">Designed by vectorjuice / Freepik</a>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"
+  ></script>
+  <script src="scripts/script.js"></script>
+</html>
